@@ -1,0 +1,67 @@
+@charset "utf-8";
+.fs(@px){
+  font-size: @px;
+}
+.color(@c:#333){
+  color:@c;
+}
+.bg(@bg){
+  background-color: @bg;
+}
+
+.pt(@px){
+  padding-top: @px;
+}
+.pr(@px) {
+  padding-right: @px;
+}
+.pb(@px){
+  padding-bottom:@px;
+}
+.pl(@px){
+  padding-left: @px;
+}
+.padding(@top,@right,@bottom,@left) {
+  .pt(@top);
+  .pr(@right);
+  .pb(@bottom);
+  .pl(@left);
+}
+.mt(@px){
+  margin-top: @px;
+}
+.mr(@px){
+  margin-right: @px;
+}
+.mb(@px){ 
+  margin-bottom: @px;
+}
+.ml(@px){
+  margin-left: @px;
+}
+.margin(@top,@right,@bottom,@left) {
+  .mt(@top);
+  .mr(@right);
+  .mb(@bottom);
+  .ml(@left);
+}
+.radius(@radius:3px){
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.border(@w,@c){
+  border:solid @w @c;
+}
+.fl(@float){
+  float: @float;
+}
+.w(@w){
+  width: @w;
+}
+.h(@h){
+  height: @h;
+}
+/* 1rem == 100px; 0.1rem= 10px; 0.05rem =5px 
+  边框1px的，直接用1px
+*/
